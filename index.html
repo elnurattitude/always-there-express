@@ -4,30 +4,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Always There Express — CDL driver recruiting. Explore regional dry van opportunities and apply today.">
-<title>Always There Express | CDL Driver Recruiting</title>
+
+<meta name="description" content="Always There Express — CDL-A driver recruiting. $0.75 CPM flat rate, all miles paid, $5,000 sign-on bonus, flexible home time, and dry van opportunities.">
+
+<title>Always There Express | CDL-A Driver Recruiting</title>
 
 <style>
 :root{
-  --bg:#07090d; --panel:#0e1219; --panel2:#111722; --text:#f5f7fa;
-  --muted:#9aa5b5; --line:#202938; --accent:#2f7cff; --accent2:#64a0ff;
-  --success:#34d399; --max:1160px;
+  --bg:#07090d;
+  --panel:#0e1219;
+  --panel2:#111722;
+  --text:#f5f7fa;
+  --muted:#9aa5b5;
+  --line:#202938;
+  --accent:#2f7cff;
+  --accent2:#64a0ff;
+  --success:#34d399;
+  --gold:#f5b942;
+  --max:1160px;
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
 
-html{scroll-behavior:smooth}
+html{
+  scroll-behavior:smooth;
+}
 
 body{
   font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   background:var(--bg);
   color:var(--text);
-  line-height:1.6
+  line-height:1.6;
 }
 
-a{color:inherit;text-decoration:none}
+a{
+  color:inherit;
+  text-decoration:none;
+}
 
-.container{width:min(92%,var(--max));margin:auto}
+.container{
+  width:min(92%,var(--max));
+  margin:auto;
+}
+
+/* HEADER */
 
 header{
   position:fixed;
@@ -35,34 +59,38 @@ header{
   left:0;
   right:0;
   z-index:50;
-  background:rgba(7,9,13,.82);
+  background:rgba(7,9,13,.86);
   backdrop-filter:blur(16px);
-  border-bottom:1px solid rgba(255,255,255,.06)
+  border-bottom:1px solid rgba(255,255,255,.06);
 }
 
 .nav{
   height:74px;
   display:flex;
   align-items:center;
-  justify-content:space-between
+  justify-content:space-between;
 }
 
 .logo{
   font-weight:900;
   letter-spacing:-.5px;
-  font-size:19px
+  font-size:19px;
 }
 
-.logo span{color:var(--accent)}
+.logo span{
+  color:var(--accent);
+}
 
 .navlinks{
   display:flex;
-  gap:28px;
+  gap:27px;
   color:#c7ced9;
-  font-size:14px
+  font-size:14px;
 }
 
-.navlinks a:hover{color:white}
+.navlinks a:hover{
+  color:white;
+}
 
 .btn{
   display:inline-flex;
@@ -73,41 +101,47 @@ header{
   padding:13px 20px;
   font-weight:800;
   cursor:pointer;
-  transition:.2s
+  transition:.2s;
 }
 
 .btn-primary{
   background:var(--accent);
   color:#fff;
-  box-shadow:0 8px 28px rgba(47,124,255,.22)
+  box-shadow:0 8px 28px rgba(47,124,255,.22);
 }
 
 .btn-primary:hover{
   background:#1e6dec;
-  transform:translateY(-1px)
+  transform:translateY(-1px);
 }
 
 .btn-outline{
   border:1px solid var(--line);
   background:transparent;
-  color:white
+  color:white;
 }
 
+.btn-outline:hover{
+  background:#111722;
+}
+
+/* HERO */
+
 .hero{
-  padding:150px 0 90px;
+  padding:150px 0 80px;
   position:relative;
-  overflow:hidden
+  overflow:hidden;
 }
 
 .hero:before{
   content:"";
   position:absolute;
-  width:650px;
-  height:650px;
-  right:-220px;
-  top:-180px;
+  width:700px;
+  height:700px;
+  right:-240px;
+  top:-200px;
   background:radial-gradient(circle,rgba(47,124,255,.18),transparent 68%);
-  pointer-events:none
+  pointer-events:none;
 }
 
 .badge{
@@ -122,7 +156,7 @@ header{
   font-size:12px;
   font-weight:800;
   text-transform:uppercase;
-  letter-spacing:.7px
+  letter-spacing:.7px;
 }
 
 .dot{
@@ -130,61 +164,89 @@ header{
   height:7px;
   background:var(--success);
   border-radius:50%;
-  box-shadow:0 0 10px rgba(52,211,153,.7)
+  box-shadow:0 0 10px rgba(52,211,153,.7);
 }
 
 h1{
-  font-size:clamp(44px,7vw,78px);
+  font-size:clamp(43px,7vw,76px);
   line-height:.98;
   letter-spacing:-3px;
-  max-width:850px;
-  margin:22px 0
+  max-width:900px;
+  margin:22px 0;
 }
 
-h1 span{color:var(--accent)}
+h1 span{
+  color:var(--accent);
+}
 
 .hero p{
-  max-width:650px;
+  max-width:690px;
   color:var(--muted);
-  font-size:18px
+  font-size:18px;
 }
 
 .actions{
   display:flex;
   gap:12px;
   flex-wrap:wrap;
-  margin-top:30px
+  margin-top:30px;
 }
 
-.stats{
+/* HERO OFFER */
+
+.hero-offer{
+  margin-top:45px;
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:12px;
-  margin-top:65px
 }
 
-.stat{
+.offer-box{
   padding:20px;
   border:1px solid var(--line);
-  background:rgba(14,18,25,.7);
-  border-radius:14px
+  background:rgba(14,18,25,.78);
+  border-radius:14px;
 }
 
-.stat strong{
-  font-size:24px;
-  display:block
+.offer-box strong{
+  display:block;
+  font-size:25px;
+  color:white;
 }
 
-.stat small{color:var(--muted)}
+.offer-box.highlight{
+  border-color:#31558d;
+  background:linear-gradient(145deg,#101c31,#0d1420);
+}
 
-section{padding:90px 0}
+.offer-box.highlight strong{
+  color:#7fb0ff;
+}
+
+.offer-box.gold{
+  border-color:#5a4824;
+}
+
+.offer-box.gold strong{
+  color:var(--gold);
+}
+
+.offer-box small{
+  color:var(--muted);
+}
+
+/* SECTIONS */
+
+section{
+  padding:90px 0;
+}
 
 .section-head{
   display:flex;
   justify-content:space-between;
   align-items:end;
   gap:30px;
-  margin-bottom:32px
+  margin-bottom:32px;
 }
 
 .eyebrow{
@@ -192,41 +254,77 @@ section{padding:90px 0}
   font-size:12px;
   font-weight:900;
   text-transform:uppercase;
-  letter-spacing:1.5px
+  letter-spacing:1.5px;
 }
 
 h2{
   font-size:38px;
   letter-spacing:-1.5px;
   line-height:1.1;
-  margin-top:8px
+  margin-top:8px;
 }
 
 .section-head p{
   color:var(--muted);
-  max-width:480px
+  max-width:500px;
 }
+
+/* PAY */
+
+.pay-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.pay-card{
+  background:linear-gradient(145deg,var(--panel),#0b0f15);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:26px;
+}
+
+.pay-card h3{
+  font-size:19px;
+  margin-bottom:8px;
+}
+
+.pay-card p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.pay-amount{
+  font-size:34px;
+  font-weight:900;
+  color:#fff;
+  margin-bottom:4px;
+}
+
+.pay-amount.gold{
+  color:var(--gold);
+}
+
+/* JOB */
 
 .jobs{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px
+  grid-template-columns:1fr;
+  gap:18px;
 }
 
 .card{
   background:linear-gradient(145deg,var(--panel),#0b0f15);
   border:1px solid var(--line);
-  border-radius:18px;
-  padding:26px
+  border-radius:20px;
+  padding:30px;
 }
-
-.card:hover{border-color:#30415d}
 
 .card-top{
   display:flex;
   justify-content:space-between;
   gap:15px;
-  align-items:start
+  align-items:start;
 }
 
 .tag{
@@ -235,107 +333,217 @@ h2{
   padding:6px 9px;
   border-radius:7px;
   font-size:11px;
-  font-weight:900
+  font-weight:900;
 }
 
 .card h3{
-  font-size:23px;
-  margin-bottom:4px
+  font-size:26px;
+  margin-bottom:5px;
 }
 
 .sub{
   color:var(--muted);
-  font-size:14px
+  font-size:14px;
 }
 
-.pay{
-  font-size:30px;
-  font-weight:900;
-  margin:18px 0 3px
-}
-
-.pay span{
-  font-size:13px;
-  color:var(--muted);
-  font-weight:500
-}
-
-.features{
+.job-main{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:9px;
-  margin:18px 0 24px
+  gap:30px;
+  margin-top:25px;
 }
 
-.features div{
-  font-size:13px;
-  color:#c8d0db
+.big-pay{
+  font-size:46px;
+  font-weight:900;
 }
 
-.features div:before{
+.big-pay span{
+  font-size:15px;
+  color:var(--muted);
+  font-weight:500;
+}
+
+.job-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.job-list div{
+  font-size:14px;
+  color:#cbd3df;
+}
+
+.job-list div:before{
   content:"✓";
   color:var(--success);
   font-weight:900;
-  margin-right:8px
+  margin-right:8px;
 }
 
-.requirements{
+/* GENERIC CARDS */
+
+.grid-3{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:16px
+  gap:16px;
 }
 
-.req{
+.req,
+.info-card{
   padding:24px;
   border:1px solid var(--line);
   background:var(--panel);
-  border-radius:16px
+  border-radius:16px;
 }
 
 .icon{
   font-size:25px;
-  margin-bottom:12px
+  margin-bottom:12px;
 }
 
-.req h3{font-size:17px}
+.req h3,
+.info-card h3{
+  font-size:17px;
+}
 
-.req p{
+.req p,
+.info-card p{
   font-size:14px;
   color:var(--muted);
-  margin-top:6px
+  margin-top:6px;
 }
+
+/* HOME TIME */
+
+.home-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+}
+
+.home-card{
+  padding:24px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:16px;
+  text-align:center;
+}
+
+.home-card strong{
+  display:block;
+  font-size:28px;
+}
+
+.home-card span{
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* FLEET */
+
+.fleet-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.fleet-box{
+  background:linear-gradient(145deg,var(--panel),#0b0f15);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:28px;
+}
+
+.fleet-box h3{
+  margin-bottom:18px;
+  font-size:21px;
+}
+
+.check-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+
+.check-grid div{
+  color:#cbd3df;
+  font-size:14px;
+}
+
+.check-grid div:before{
+  content:"✓";
+  color:var(--success);
+  margin-right:8px;
+  font-weight:900;
+}
+
+/* PROCESS */
 
 .process{
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  gap:12px
+  gap:12px;
 }
 
 .step{
-  position:relative;
   padding:25px;
   border:1px solid var(--line);
   border-radius:16px;
-  background:var(--panel)
+  background:var(--panel);
 }
 
 .num{
   font-size:12px;
   color:var(--accent2);
-  font-weight:900
+  font-weight:900;
 }
 
-.step h3{margin:12px 0 6px}
+.step h3{
+  margin:12px 0 6px;
+}
 
 .step p{
   font-size:14px;
-  color:var(--muted)
+  color:var(--muted);
+}
+
+/* ORIENTATION */
+
+.orientation{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+
+.orientation-box{
+  padding:30px;
+  border:1px solid var(--line);
+  background:var(--panel);
+  border-radius:18px;
+}
+
+.orientation-box h3{
+  font-size:21px;
+  margin-bottom:15px;
+}
+
+.address{
+  font-size:19px;
+  font-weight:800;
+  margin-bottom:14px;
+}
+
+.orientation-box p{
+  color:var(--muted);
 }
 
 /* FAQ */
+
 .faq{
   max-width:900px;
-  margin:auto
+  margin:auto;
 }
 
 .faq details{
@@ -343,7 +551,7 @@ h2{
   background:linear-gradient(145deg,var(--panel),#0b0f15);
   border-radius:12px;
   margin-bottom:10px;
-  overflow:hidden
+  overflow:hidden;
 }
 
 .faq summary{
@@ -352,10 +560,12 @@ h2{
   list-style:none;
   padding:19px 22px;
   position:relative;
-  padding-right:55px
+  padding-right:55px;
 }
 
-.faq summary::-webkit-details-marker{display:none}
+.faq summary::-webkit-details-marker{
+  display:none;
+}
 
 .faq summary:after{
   content:"+";
@@ -364,107 +574,151 @@ h2{
   top:15px;
   color:var(--accent2);
   font-size:24px;
-  font-weight:400
+  font-weight:400;
 }
 
 .faq details[open] summary:after{
-  content:"−"
+  content:"−";
 }
 
 .faq p{
   color:var(--muted);
   padding:0 22px 20px;
   font-size:14px;
-  max-width:850px
 }
+
+/* APPLY */
 
 .apply{
   background:linear-gradient(145deg,#0d1625,#0b0f16);
   border:1px solid #1e3558;
   border-radius:22px;
-  padding:35px
+  padding:12px;
+  overflow:hidden;
 }
+
+/* CONTACT */
 
 .contact{
   display:grid;
   grid-template-columns:1.2fr .8fr;
-  gap:18px
+  gap:18px;
 }
 
 .contact-box{
   padding:30px;
   border:1px solid var(--line);
   background:var(--panel);
-  border-radius:18px
+  border-radius:18px;
 }
 
 .contact-box p{
   color:var(--muted);
-  margin:8px 0 20px
+  margin:8px 0 20px;
 }
 
 .contact-links{
   display:flex;
   flex-wrap:wrap;
-  gap:10px
+  gap:10px;
 }
+
+/* CTA */
+
+.final-cta{
+  text-align:center;
+  background:linear-gradient(145deg,#0d1625,#090d14);
+  border:1px solid #1e3558;
+  border-radius:22px;
+  padding:55px 25px;
+}
+
+.final-cta h2{
+  margin-bottom:12px;
+}
+
+.final-cta p{
+  color:var(--muted);
+  margin-bottom:25px;
+}
+
+/* FOOTER */
 
 footer{
   border-top:1px solid var(--line);
   padding:28px 0;
   color:#778191;
-  font-size:12px
+  font-size:12px;
 }
 
 .footerin{
   display:flex;
   justify-content:space-between;
-  gap:20px
+  gap:20px;
 }
 
-.mobile-menu{display:none}
+/* MOBILE */
+
+.mobile-menu{
+  display:none;
+}
 
 @media(max-width:800px){
 
- .navlinks{display:none}
+ .navlinks{
+   display:none;
+ }
 
  .mobile-menu{
    display:block;
    background:none;
    border:0;
    color:white;
-   font-size:24px
+   font-size:24px;
  }
 
- .hero{padding-top:125px}
-
- .stats{
-   grid-template-columns:1fr 1fr
+ .hero{
+   padding-top:125px;
  }
 
- .jobs,
- .requirements,
+ .hero-offer,
+ .pay-grid,
+ .grid-3,
+ .home-grid,
  .process,
+ .orientation,
+ .fleet-grid,
  .contact{
-   grid-template-columns:1fr
+   grid-template-columns:1fr;
  }
 
- h1{letter-spacing:-2px}
+ .job-main{
+   grid-template-columns:1fr;
+ }
+
+ .job-list,
+ .check-grid{
+   grid-template-columns:1fr;
+ }
+
+ h1{
+   letter-spacing:-2px;
+ }
 
  .section-head{
-   display:block
+   display:block;
  }
 
  .section-head p{
-   margin-top:12px
+   margin-top:12px;
  }
 
  .footerin{
-   display:block
+   display:block;
  }
 
  .footerin div+div{
-   margin-top:8px
+   margin-top:8px;
  }
 }
 </style>
@@ -474,25 +728,28 @@ footer{
 <body>
 
 <header>
-  <div class="container nav">
 
-```
+<div class="container nav">
+
 <a class="logo" href="#">
-  ALWAYS <span>THERE</span> EXPRESS
+ALWAYS <span>THERE</span> EXPRESS
 </a>
 
 <nav class="navlinks">
-  <a href="#jobs">Jobs</a>
-  <a href="#requirements">Requirements</a>
-  <a href="#process">How It Works</a>
-  <a href="#faq">FAQ</a>
-  <a href="#apply">Apply</a>
+<a href="#pay">Pay</a>
+<a href="#jobs">Position</a>
+<a href="#fleet">Fleet</a>
+<a href="#requirements">Requirements</a>
+<a href="#faq">FAQ</a>
+<a href="#apply">Apply</a>
 </nav>
 
-<a class="btn btn-primary" href="#apply">Apply Now</a>
-```
+<a class="btn btn-primary" href="#apply">
+Apply Now
+</a>
 
-  </div>
+</div>
+
 </header>
 
 <main>
@@ -503,156 +760,334 @@ footer{
 
 <div class="container">
 
-  <div class="badge">
-    <span class="dot"></span>
-    CDL Drivers Wanted
-  </div>
+<div class="badge">
+<span class="dot"></span>
+CDL-A DRIVERS WANTED
+</div>
 
-  <h1>
-    Get on the road.<br>
-    <span>Get home.</span> Get paid.
-  </h1>
+<h1>
+Drive more.<br>
+<span>Earn more.</span> Get home.
+</h1>
 
-  <p>
-    Explore current CDL driving opportunities with Always There Express.
-    Regional dry van positions, clear pay structures, and flexible home-time options.
-  </p>
+<p>
+Join Always There Express as a company CDL-A driver.
+$0.75 CPM flat rate, all miles paid, flexible home-time options,
+modern dry van equipment, and fast hiring.
+</p>
 
-  <div class="actions">
-    <a class="btn btn-primary" href="#jobs">
-      View Open Positions
-    </a>
+<div class="actions">
 
-```
-<a class="btn btn-outline" href="#apply">
-  Start Application
+<a class="btn btn-primary" href="#apply">
+Apply Now
 </a>
-```
 
-  </div>
+<a class="btn btn-outline" href="#jobs">
+View Position
+</a>
 
-  <div class="stats">
-
-```
-<div class="stat">
-  <strong>$0.80</strong>
-  <small>CPM — Midwest Regional</small>
 </div>
 
-<div class="stat">
-  <strong>$0.75</strong>
-  <small>CPM — Southeast incl. bonus</small>
+<div class="hero-offer">
+
+<div class="offer-box highlight">
+<strong>$0.75 CPM</strong>
+<small>Flat rate — all miles</small>
 </div>
 
-<div class="stat">
-  <strong>Weekly</strong>
-  <small>Home-time option</small>
+<div class="offer-box gold">
+<strong>$5,000</strong>
+<small>Sign-on bonus</small>
 </div>
 
-<div class="stat">
-  <strong>2+ yrs</strong>
-  <small>CDL experience preferred</small>
+<div class="offer-box">
+<strong>Solo or Team</strong>
+<small>No mileage bands</small>
 </div>
-```
 
-  </div>
+<div class="offer-box">
+<strong>24 HRS</strong>
+<small>Potential start time</small>
+</div>
+
+</div>
 
 </div>
 
 </section>
 
-<!-- JOBS -->
+<!-- PAY -->
+
+<section id="pay">
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+<div class="eyebrow">Pay & compensation</div>
+<h2>Know what you earn.</h2>
+</div>
+
+<p>
+Straightforward compensation with the same mileage rate
+for loaded and empty miles.
+</p>
+
+</div>
+
+<div class="pay-grid">
+
+<div class="pay-card">
+<div class="pay-amount">$0.75</div>
+<h3>Flat CPM Rate</h3>
+<p>
+Paid on all miles — loaded and empty.
+No mileage bands.
+</p>
+</div>
+
+<div class="pay-card">
+<div class="pay-amount gold">$5,000</div>
+<h3>Sign-On Bonus</h3>
+<p>
+Sign-on bonus available subject to applicable
+eligibility and company terms.
+</p>
+</div>
+
+<div class="pay-card">
+<div class="pay-amount">$500</div>
+<h3>Driver Referral Bonus</h3>
+<p>
+Referral bonus available according to current
+company referral terms.
+</p>
+</div>
+
+<div class="pay-card">
+<h3>Weekly Direct Deposit</h3>
+<p>
+Pay is deposited every Friday.
+</p>
+</div>
+
+<div class="pay-card">
+<h3>Detention & Layover</h3>
+<p>
+Detention and layover pay available, including
+when the broker does not pay.
+</p>
+</div>
+
+<div class="pay-card">
+<h3>Extra Stops</h3>
+<p>
+Additional stops are paid separately.
+Cash advances are also available.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- POSITION -->
 
 <section id="jobs">
 
 <div class="container">
 
- <div class="section-head">
+<div class="section-head">
 
-  <div>
-    <div class="eyebrow">Current opportunities</div>
-    <h2>Find your lane.</h2>
-  </div>
-
-  <p>
-    Choose the opportunity that fits your experience,
-    preferred region, and home-time needs.
-  </p>
-
- </div>
-
- <div class="jobs">
-
-  <article class="card">
-
-   <div class="card-top">
-
-```
 <div>
-  <h3>Midwest Regional Dry Van</h3>
-  <div class="sub">
-    Regional • Dry Van • Company Driver
-  </div>
+<div class="eyebrow">Current opportunity</div>
+<h2>Find your lane.</h2>
+</div>
+
+<p>
+A dry van position designed for experienced CDL-A drivers
+looking for consistent miles and structured home time.
+</p>
+
+</div>
+
+<div class="jobs">
+
+<article class="card">
+
+<div class="card-top">
+
+<div>
+<h3>Regional & Long-Haul Dry Van</h3>
+<div class="sub">
+Company Driver • Solo or Team • 53' Dry Van
+</div>
 </div>
 
 <span class="tag">HIRING</span>
-```
 
-   </div>
-
-   <div class="pay">
-     $0.80 <span>CPM</span>
-   </div>
-
-   <div class="features">
-     <div>Regional lanes</div>
-     <div>Weekly / bi-weekly home time</div>
-     <div>Dry van freight</div>
-     <div>Driver support</div>
-   </div>
-
-   <a class="btn btn-primary" href="#apply">
-     Apply for this position
-   </a>
-
-  </article>
-
-  <article class="card">
-
-   <div class="card-top">
-
-```
-<div>
-  <h3>Southeast Regional Dry Van</h3>
-  <div class="sub">
-    Regional • Dry Van • Company Driver
-  </div>
 </div>
 
-<span class="tag">HIRING</span>
-```
+<div class="job-main">
 
-   </div>
+<div>
 
-   <div class="pay">
-     $0.70
-     <span>CPM + $0.05 performance bonus</span>
-   </div>
+<div class="big-pay">
+$0.75 <span>CPM FLAT</span>
+</div>
 
-   <div class="features">
-     <div>Southeast regional</div>
-     <div>Weekly / bi-weekly home time</div>
-     <div>Performance bonus</div>
-     <div>Driver support</div>
-   </div>
+<p style="color:var(--muted);margin-top:8px">
+All miles — loaded and empty.
+Same rate for solo or team.
+</p>
 
-   <a class="btn btn-primary" href="#apply">
-     Apply for this position
-   </a>
+</div>
 
-  </article>
+<div class="job-list">
 
- </div>
+<div>South lanes</div>
+<div>Southeast lanes</div>
+<div>Southwest lanes</div>
+<div>Solo or team</div>
+<div>All miles paid</div>
+<div>Automatic equipment</div>
+<div>Weekly direct deposit</div>
+<div>24/7 support</div>
+
+</div>
+
+</div>
+
+<div style="margin-top:28px">
+
+<a class="btn btn-primary" href="#apply">
+Apply for this position
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HOME TIME -->
+
+<section>
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+<div class="eyebrow">Home time</div>
+<h2>Plan your time off.</h2>
+</div>
+
+<p>
+Choose a schedule based on how long you want to stay on the road.
+Long-haul states have a four-week minimum.
+</p>
+
+</div>
+
+<div class="home-grid">
+
+<div class="home-card">
+<strong>2 / 2</strong>
+<span>2 weeks out • 2 days off</span>
+</div>
+
+<div class="home-card">
+<strong>3 / 3</strong>
+<span>3 weeks out • 3 days off</span>
+</div>
+
+<div class="home-card">
+<strong>4 / 4</strong>
+<span>4 weeks out • 4 days off</span>
+</div>
+
+<div class="home-card">
+<strong>+1 DAY</strong>
+<span>Each extra week adds 1 day off</span>
+</div>
+
+</div>
+
+<div style="margin-top:18px;text-align:center;color:var(--muted);font-size:14px">
+Minimum time out: <strong style="color:white">2 weeks</strong>
+&nbsp; • &nbsp;
+Long-haul states: <strong style="color:white">4 weeks minimum</strong>
+</div>
+
+</div>
+
+</section>
+
+<!-- FLEET -->
+
+<section id="fleet">
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+<div class="eyebrow">Equipment & fleet</div>
+<h2>Modern equipment.</h2>
+</div>
+
+<p>
+Drivers have access to modern automatic equipment and
+the amenities needed for life on the road.
+</p>
+
+</div>
+
+<div class="fleet-grid">
+
+<div class="fleet-box">
+
+<h3>Trucks & trailers</h3>
+
+<div class="check-grid">
+
+<div>Volvo</div>
+<div>Freightliner Cascadia</div>
+<div>2020–2026 models</div>
+<div>Automatic transmission</div>
+<div>53' dry van</div>
+<div>Disc brakes</div>
+
+</div>
+
+</div>
+
+<div class="fleet-box">
+
+<h3>Driver amenities</h3>
+
+<div class="check-grid">
+
+<div>APU</div>
+<div>Refrigerator</div>
+<div>Microwave</div>
+<div>Inverter</div>
+<div>LED lighting</div>
+<div>Comfort-focused equipment</div>
+
+</div>
+
+</div>
+
+</div>
 
 </div>
 
@@ -664,47 +1099,156 @@ footer{
 
 <div class="container">
 
- <div class="section-head">
+<div class="section-head">
 
-  <div>
-    <div class="eyebrow">Before you apply</div>
-    <h2>What we look for.</h2>
-  </div>
+<div>
+<div class="eyebrow">Driver requirements</div>
+<h2>What we look for.</h2>
+</div>
 
-  <p>
-    Requirements can vary by position and carrier.
-    Your recruiter will confirm the exact qualifications.
-  </p>
+<p>
+Requirements are reviewed during the qualification process.
+</p>
 
- </div>
+</div>
 
- <div class="requirements">
+<div class="grid-3">
 
-  <div class="req">
-    <div class="icon">🪪</div>
-    <h3>Valid CDL</h3>
-    <p>
-      Current commercial driver's license and eligibility to drive.
-    </p>
-  </div>
+<div class="req">
+<div class="icon">🪪</div>
+<h3>2+ Years CDL-A</h3>
+<p>
+Minimum two years of CDL-A driving experience.
+</p>
+</div>
 
-  <div class="req">
-    <div class="icon">🚛</div>
-    <h3>Driving Experience</h3>
-    <p>
-      Current openings generally target drivers with 2+ years of CDL experience.
-    </p>
-  </div>
+<div class="req">
+<div class="icon">🧪</div>
+<h3>Clearinghouse & Drug Test</h3>
+<p>
+Clean Clearinghouse status and successful drug-test requirements.
+</p>
+</div>
 
-  <div class="req">
-    <div class="icon">📋</div>
-    <h3>Driving Record</h3>
-    <p>
-      Recruiters review your record and other qualifications during the hiring process.
-    </p>
-  </div>
+<div class="req">
+<div class="icon">🚫</div>
+<h3>No SAP / DUI / DWI</h3>
+<p>
+No SAP, DUI, or DWI according to the current hiring requirements.
+</p>
+</div>
 
- </div>
+<div class="req">
+<div class="icon">📋</div>
+<h3>Violations</h3>
+<p>
+Maximum 3 minor violations within the last 3 years.
+</p>
+</div>
+
+<div class="req">
+<div class="icon">🚛</div>
+<h3>Accident History</h3>
+<p>
+Maximum 1 preventable accident within the last 3 years.
+</p>
+</div>
+
+<div class="req">
+<div class="icon">🔑</div>
+<h3>Truck Abandonment</h3>
+<p>
+No truck abandonment history.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DRIVER EXTRAS -->
+
+<section>
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+<div class="eyebrow">Driver extras</div>
+<h2>More support on the road.</h2>
+</div>
+
+</div>
+
+<div class="grid-3">
+
+<div class="info-card">
+<h3>🐕 Pets Allowed</h3>
+<p>
+Bring your pet according to current company policy.
+</p>
+</div>
+
+<div class="info-card">
+<h3>⛽ Fuel Cards</h3>
+<p>
+Love's fuel cards are provided.
+</p>
+</div>
+
+<div class="info-card">
+<h3>🛣️ Toll Passes</h3>
+<p>
+Toll passes are provided.
+</p>
+</div>
+
+<div class="info-card">
+<h3>🔧 On-Site Repair</h3>
+<p>
+Access to an on-site repair shop.
+</p>
+</div>
+
+<div class="info-card">
+<h3>📞 24/7 Support</h3>
+<p>
+24/7 dispatch and roadside support.
+</p>
+</div>
+
+<div class="info-card">
+<h3>✈️ Travel Assistance</h3>
+<p>
+Travel assistance up to $250 and airport pickup.
+</p>
+</div>
+
+<div class="info-card">
+<h3>💳 No Security Deposit</h3>
+<p>
+No security deposit — keep every mile you earn.
+</p>
+</div>
+
+<div class="info-card">
+<h3>💵 Cash Advances</h3>
+<p>
+Cash advances are available according to company policy.
+</p>
+</div>
+
+<div class="info-card">
+<h3>💰 Referral Bonus</h3>
+<p>
+Driver referral bonus of $500 under current program terms.
+</p>
+</div>
+
+</div>
 
 </div>
 
@@ -716,90 +1260,105 @@ footer{
 
 <div class="container">
 
- <div class="section-head">
+<div class="section-head">
 
-  <div>
-    <div class="eyebrow">Simple process</div>
-    <h2>From application to orientation.</h2>
-  </div>
+<div>
+<div class="eyebrow">Fast hiring</div>
+<h2>From application to first load.</h2>
+</div>
 
- </div>
+<p>
+A straightforward recruiting and onboarding process.
+</p>
 
- <div class="process">
+</div>
 
-  <div class="step">
-    <div class="num">01</div>
-    <h3>Apply</h3>
-    <p>
-      Send your basic driver information through the application.
-    </p>
-  </div>
+<div class="process">
 
-  <div class="step">
-    <div class="num">02</div>
-    <h3>Recruiter Call</h3>
-    <p>
-      We discuss experience, preferences, pay, and available positions.
-    </p>
-  </div>
+<div class="step">
+<div class="num">01</div>
+<h3>Apply</h3>
+<p>
+Submit your CDL and driver information online.
+</p>
+</div>
 
-  <div class="step">
-    <div class="num">03</div>
-    <h3>Qualification</h3>
-    <p>
-      The carrier reviews your qualifications and required documents.
-    </p>
-  </div>
+<div class="step">
+<div class="num">02</div>
+<h3>Recruiter Call</h3>
+<p>
+Discuss experience, pay, lanes, home time, and requirements.
+</p>
+</div>
 
-  <div class="step">
-    <div class="num">04</div>
-    <h3>Get Started</h3>
-    <p>
-      Complete the carrier's hiring and onboarding process.
-    </p>
-  </div>
+<div class="step">
+<div class="num">03</div>
+<h3>Qualification</h3>
+<p>
+Complete the required qualification and drug-testing process.
+</p>
+</div>
 
- </div>
+<div class="step">
+<div class="num">04</div>
+<h3>Get Started</h3>
+<p>
+Complete orientation and prepare for your first load.
+</p>
+</div>
+
+</div>
 
 </div>
 
 </section>
 
-<!-- APPLICATION -->
+<!-- ORIENTATION -->
 
-<section id="apply">
+<section>
 
 <div class="container">
 
- <div class="section-head">
+<div class="section-head">
 
-  <div>
-    <div class="eyebrow">Driver application</div>
-    <h2>Apply directly on our website.</h2>
-  </div>
+<div>
+<div class="eyebrow">Orientation</div>
+<h2>Get ready to roll.</h2>
+</div>
 
-  <p>
-    Complete the application below.
-    You won't need to leave the Always There Express website.
-  </p>
+</div>
 
- </div>
+<div class="orientation">
 
- <div class="apply" style="padding:12px;overflow:hidden">
+<div class="orientation-box">
 
-   <iframe
-     src="https://docs.google.com/forms/d/e/1FAIpQLSeTCPYQ_-dMbdB3dkTfLD2jorCgg7lKy47EzRj8rbKPFQXrAA/viewform?embedded=true"
-     width="100%"
-     height="1150"
-     frameborder="0"
-     marginheight="0"
-     marginwidth="0"
-     style="display:block;border:0;border-radius:14px;background:#fff"
-     title="Always There Express Driver Application">
-     Loading application…
-   </iframe>
+<h3>📍 Orientation Location</h3>
 
- </div>
+<div class="address">
+565 Anderson Dr, Unit B<br>
+Romeoville, IL 60446
+</div>
+
+<p>
+Orientation duration: approximately 24 hours.
+</p>
+
+</div>
+
+<div class="orientation-box">
+
+<h3>✈️ Travel & Drug Test</h3>
+
+<p>
+Flights are covered up to $250.
+Uber pickup is available from Chicagoland and Chicago airports.
+Drug testing is performed before noon and may be completed on-site
+or prior, depending on the situation.
+</p>
+
+</div>
+
+</div>
 
 </div>
 
@@ -811,190 +1370,354 @@ footer{
 
 <div class="container">
 
- <div class="section-head">
+<div class="section-head">
 
-  <div>
-    <div class="eyebrow">Driver information</div>
-    <h2>Frequently asked questions.</h2>
-  </div>
+<div>
+<div class="eyebrow">Driver information</div>
+<h2>Frequently asked questions.</h2>
+</div>
 
-  <p>
-    Answers to common questions drivers ask before applying.
-  </p>
+<p>
+Answers to common questions drivers ask before applying.
+</p>
 
- </div>
+</div>
 
- <div class="faq">
+<div class="faq">
 
-  <details>
-   <summary>Are all miles paid, including loaded and unloaded miles?</summary>
-   <p>
-     Yes. We pay for all miles driven, including both loaded and empty miles.
-     Mileage is calculated using the OpenRoad app based on address-to-address
-     routing, not zip-to-zip.
-   </p>
-  </details>
+<details>
+<summary>Are all miles paid, including loaded and empty miles?</summary>
+<p>
+Yes. The advertised rate is $0.75 CPM flat and applies to all miles,
+including loaded and empty miles.
+</p>
+</details>
 
-  <details>
-   <summary>What is the governed truck speed?</summary>
-   <p>
-     Trucks are governed at 70 MPH.
-   </p>
-  </details>
+<details>
+<summary>Is there a mileage band?</summary>
+<p>
+No. The advertised compensation uses a flat $0.75 CPM rate.
+</p>
+</details>
 
-  <details>
-   <summary>Do you offer dedicated lanes?</summary>
-   <p>
-     Yes. We have some customer freight and dedicated opportunities.
-     Most OTR loads come from reliable brokers we've worked with for many years
-     or from DOT load boards.
-   </p>
-  </details>
+<details>
+<summary>Can I drive solo or as a team?</summary>
+<p>
+Yes. The current offer is available for solo or team drivers,
+subject to qualification and equipment availability.
+</p>
+</details>
 
-  <details>
-   <summary>Is the freight no-touch?</summary>
-   <p>
-     Most freight is no-touch. If unloading requires a lumper,
-     the company covers the applicable lumper fees.
-   </p>
-  </details>
+<details>
+<summary>How often is pay deposited?</summary>
+<p>
+Direct deposit is made weekly on Friday.
+</p>
+</details>
 
-  <details>
-   <summary>What is the drop-and-hook vs. live-load ratio?</summary>
-   <p>
-     Most loads come from long-term broker relationships or DOT load boards
-     and are no-touch freight. If you are on time and consistent, dispatch
-     can pre-book loads to help keep you moving.
-   </p>
-  </details>
+<details>
+<summary>Is there a sign-on bonus?</summary>
+<p>
+A $5,000 sign-on bonus is advertised, subject to eligibility
+and applicable company terms.
+</p>
+</details>
 
-  <details>
-   <summary>Are there driver-facing cameras in the truck?</summary>
-   <p>
-     We do not use inward-facing cameras because we respect driver privacy.
-   </p>
-  </details>
+<details>
+<summary>Is there a driver referral bonus?</summary>
+<p>
+Yes. The current advertised referral bonus is $500,
+subject to the applicable referral program terms.
+</p>
+</details>
 
-  <details>
-   <summary>What ELD system do you use?</summary>
-   <p>
-     We use Samsara ELD tablets.
-   </p>
-  </details>
+<details>
+<summary>Are detention and layover paid?</summary>
+<p>
+Yes. Detention and layover pay are offered according to
+the company's current compensation policy.
+</p>
+</details>
 
-  <details>
-   <summary>Is the company ELD-friendly?</summary>
-   <p>
-     We strictly follow applicable FMCSA hours-of-service requirements.
-     We do not push drivers to violate HOS rules or work beyond legal limits.
-     Driver safety and compliance are priorities.
-   </p>
-  </details>
+<details>
+<summary>Are extra stops paid?</summary>
+<p>
+Yes. Extra stops are paid separately according to the
+current compensation policy.
+</p>
+</details>
 
-  <details>
-   <summary>Is dispatch forced?</summary>
-   <p>
-     No. Dispatch is not forced. However, we encourage drivers to work with
-     dispatch because the dispatch team works to find high-paying freight
-     and good mileage opportunities.
-   </p>
-  </details>
+<details>
+<summary>What trucks do you use?</summary>
+<p>
+The fleet includes Volvo and Freightliner Cascadia trucks,
+with model years ranging from 2020 through 2026.
+</p>
+</details>
 
-  <details>
-   <summary>Can I take my 34-hour reset at home?</summary>
-   <p>
-     Yes, when your home is reasonably close to your route. If you are
-     running OTR, resets are generally taken on the road.
-   </p>
-  </details>
+<details>
+<summary>Are the trucks automatic?</summary>
+<p>
+Yes. The listed fleet uses automatic transmissions.
+</p>
+</details>
 
-  <details>
-   <summary>Where do drivers fuel?</summary>
-   <p>
-     Drivers typically fuel at Pilot or Flying J.
-   </p>
-  </details>
+<details>
+<summary>What type of trailer do you use?</summary>
+<p>
+The current position uses 53-foot dry van trailers.
+</p>
+</details>
 
-  <details>
-   <summary>Are tolls covered by the company?</summary>
-   <p>
-     Yes. Tolls are covered by the company, and I-PASS/E-ZPass is provided
-     when applicable.
-   </p>
-  </details>
+<details>
+<summary>What are the main lanes?</summary>
+<p>
+The current lanes include the South, Southeast, and Southwest.
+</p>
+</details>
 
-  <details>
-   <summary>When does the pay period start and end?</summary>
-   <p>
-     The pay period runs from Sunday through Saturday.
-   </p>
-  </details>
+<details>
+<summary>What is the governed truck speed?</summary>
+<p>
+The trucks are governed at approximately 69–70 MPH.
+</p>
+</details>
 
-  <details>
-   <summary>Do you offer cash advances?</summary>
-   <p>
-     Yes. Drivers can request a cash advance of up to $250 per week if needed.
-   </p>
-  </details>
+<details>
+<summary>What are the home-time options?</summary>
+<p>
+The current schedule is 2 weeks out / 2 days off,
+3 weeks out / 3 days off, or 4 weeks out / 4 days off.
+Each additional week out adds one additional day off.
+</p>
+</details>
 
-  <details>
-   <summary>Is the company European or Russian-owned?</summary>
-   <p>
-     The company is diverse, with employees from different backgrounds,
-     including Americans, Europeans, and Mexicans.
-   </p>
-  </details>
+<details>
+<summary>What is the minimum time out?</summary>
+<p>
+The minimum scheduled time out is 2 weeks.
+Certain long-haul states require a minimum of 4 weeks out.
+</p>
+</details>
 
-  <details>
-   <summary>Are you a direct recruiter or a broker?</summary>
-   <p>
-     I am an in-house recruiter and recruit directly for the company.
-   </p>
-  </details>
+<details>
+<summary>Which states require 4 weeks out?</summary>
+<p>
+The listed long-haul states are New York, Florida, Arizona, Utah,
+Colorado, Wyoming, and North Dakota.
+</p>
+</details>
 
-  <details>
-   <summary>How is mileage calculated?</summary>
-   <p>
-     Mileage is calculated using the OpenRoad app based on address-to-address
-     routing rather than zip-to-zip mileage.
-   </p>
-  </details>
+<details>
+<summary>Are pets allowed?</summary>
+<p>
+Yes. Pets are allowed according to current company policy.
+</p>
+</details>
 
-  <details>
-   <summary>Do you offer weekly home time?</summary>
-   <p>
-     Weekly and bi-weekly home-time options are available for the listed
-     regional opportunities, subject to the specific position and lane.
-   </p>
-  </details>
+<details>
+<summary>Where do drivers fuel?</summary>
+<p>
+Love's fuel cards are provided.
+</p>
+</details>
 
-  <details>
-   <summary>What equipment do you hire for?</summary>
-   <p>
-     The current featured opportunities are dry van positions.
-     Ask a recruiter about other equipment types.
-   </p>
-  </details>
+<details>
+<summary>Are tolls covered?</summary>
+<p>
+Toll passes are provided according to the company's current policy.
+</p>
+</details>
 
-  <details>
-   <summary>Do I need endorsements?</summary>
-   <p>
-     Endorsements can be useful for different freight opportunities,
-     but requirements depend on the specific position. Tell us what
-     endorsements you have in the application.
-   </p>
-  </details>
+<details>
+<summary>Is there an on-site repair shop?</summary>
+<p>
+Yes. An on-site repair shop is available.
+</p>
+</details>
 
-  <details>
-   <summary>How does the application process work?</summary>
-   <p>
-     Submit your basic information, speak with a recruiter, complete
-     qualification checks, and then continue through the carrier's
-     hiring and onboarding process.
-   </p>
-  </details>
+<details>
+<summary>Is dispatch forced?</summary>
+<p>
+Dispatch is not forced. Drivers are encouraged to work with dispatch
+to help identify available freight and mileage opportunities.
+</p>
+</details>
 
- </div>
+<details>
+<summary>Are there driver-facing cameras?</summary>
+<p>
+The company does not use inward-facing cameras.
+</p>
+</details>
+
+<details>
+<summary>What ELD system do you use?</summary>
+<p>
+The company uses Samsara ELD tablets.
+</p>
+</details>
+
+<details>
+<summary>Can I take my 34-hour reset at home?</summary>
+<p>
+Yes, when your home is reasonably close to your route.
+OTR drivers may take resets on the road depending on their schedule.
+</p>
+</details>
+
+<details>
+<summary>Are cash advances available?</summary>
+<p>
+Yes. Cash advances are available according to current company policy.
+</p>
+</details>
+
+<details>
+<summary>What are the CDL requirements?</summary>
+<p>
+The current requirements include at least 2 years of CDL-A experience,
+a clean Clearinghouse and drug-test qualification, and no SAP, DUI,
+or DWI according to the listed hiring requirements.
+</p>
+</details>
+
+<details>
+<summary>How many violations are allowed?</summary>
+<p>
+The listed requirement allows a maximum of 3 minor violations
+within the last 3 years.
+</p>
+</details>
+
+<details>
+<summary>How many preventable accidents are allowed?</summary>
+<p>
+The listed requirement allows a maximum of 1 preventable accident
+within the last 3 years.
+</p>
+</details>
+
+<details>
+<summary>Is truck abandonment allowed?</summary>
+<p>
+No. The listed requirements specify no truck abandonment history.
+</p>
+</details>
+
+<details>
+<summary>How much travel assistance is provided?</summary>
+<p>
+Travel assistance is available up to $250, with airport pickup
+available according to the orientation arrangements.
+</p>
+</details>
+
+<details>
+<summary>Where is orientation?</summary>
+<p>
+Orientation is held at 565 Anderson Dr, Unit B, Romeoville, IL 60446.
+</p>
+</details>
+
+<details>
+<summary>How long is orientation?</summary>
+<p>
+Orientation is approximately 24 hours.
+</p>
+</details>
+
+<details>
+<summary>Is drug testing available before orientation?</summary>
+<p>
+Drug testing may be completed on-site or prior to orientation,
+depending on the individual case. The listed orientation process
+requires the drug test before noon.
+</p>
+</details>
+
+<details>
+<summary>How quickly can I start?</summary>
+<p>
+The current recruiting offer advertises a potential start within
+24 hours for qualified drivers, subject to completing the required
+hiring and qualification process.
+</p>
+</details>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- APPLICATION -->
+
+<section id="apply">
+
+<div class="container">
+
+<div class="section-head">
+
+<div>
+<div class="eyebrow">Driver application</div>
+<h2>Apply now.</h2>
+</div>
+
+<p>
+Complete the application below. A recruiter can follow up
+with qualified applicants.
+</p>
+
+</div>
+
+<div class="apply">
+
+<iframe
+src="https://docs.google.com/forms/d/e/1FAIpQLSeTCPYQ_-dMbdB3dkTfLD2jorCgg7lKy47EzRj8rbKPFQXrAA/viewform?embedded=true"
+width="100%"
+height="1150"
+frameborder="0"
+marginheight="0"
+marginwidth="0"
+style="display:block;border:0;border-radius:14px;background:#fff"
+title="Always There Express Driver Application">
+Loading application…
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FINAL CTA -->
+
+<section>
+
+<div class="container">
+
+<div class="final-cta">
+
+<div class="eyebrow">
+FAST HIRING
+</div>
+
+<h2>
+Ready to get on the road?
+</h2>
+
+<p>
+Apply now and speak with recruiting about available positions.
+The current offer advertises first-load availability within 24 hours
+for qualified drivers.
+</p>
+
+<a class="btn btn-primary" href="#apply">
+Apply Now
+</a>
+
+</div>
 
 </div>
 
@@ -1006,69 +1729,73 @@ footer{
 
 <div class="container">
 
- <div class="contact">
+<div class="contact">
 
-  <div class="contact-box">
+<div class="contact-box">
 
-   <div class="eyebrow">Talk to recruiting</div>
+<div class="eyebrow">
+Talk to recruiting
+</div>
 
-   <h2>Have questions?</h2>
+<h2>
+Have questions?
+</h2>
 
-   <p>
-     Contact your recruiter directly about available lanes, pay structure,
-     home time, endorsements, or the application process.
-   </p>
+<p>
+Contact recruiting about available lanes, pay, home time,
+equipment, requirements, or the application process.
+</p>
 
-   <div class="contact-links">
+<div class="contact-links">
 
-```
 <a class="btn btn-primary" href="tel:+998943524844">
-  Call Recruiting
-</a>
-
-<a class="btn btn-outline" href="mailto:elnurbekmirzayevswork@gmail.com">
-  Email Recruiting
+Call Recruiting
 </a>
 
 <a class="btn btn-outline"
-   href="https://t.me/wxetg"
-   target="_blank"
-   rel="noopener">
-  Telegram @wxetg
-</a>
-```
+href="mailto:elnurbekmirzayevswork@gmail.com">
+Email Recruiting </a>
 
-   </div>
+<a class="btn btn-outline"
+href="https://t.me/wxetg"
+target="_blank"
+rel="noopener">
+Telegram @wxetg </a>
 
-  </div>
+</div>
 
-  <div class="contact-box">
+</div>
 
-   <div class="eyebrow">Recruiting hours</div>
+<div class="contact-box">
 
-   <h3 style="margin-top:8px">
-     24/7 Recruiting
-   </h3>
+<div class="eyebrow">
+Recruiting
+</div>
 
-   <p>
-     Available 24 hours a day, 7 days a week.
-   </p>
+<h3 style="margin-top:8px">
+24/7 Recruiting
+</h3>
 
-   <div class="eyebrow">
-     Service area
-   </div>
+<p>
+Contact recruiting any time about current openings.
+</p>
 
-   <h3 style="margin-top:8px">
-     U.S. CDL Drivers
-   </h3>
+<div class="eyebrow">
+Service area
+</div>
 
-   <p>
-     Availability depends on current carrier needs and driver qualifications.
-   </p>
+<h3 style="margin-top:8px">
+U.S. CDL Drivers
+</h3>
 
-  </div>
+<p>
+Availability depends on current carrier needs
+and driver qualifications.
+</p>
 
- </div>
+</div>
+
+</div>
 
 </div>
 
@@ -1080,13 +1807,14 @@ footer{
 
 <div class="container footerin">
 
- <div>
-   © 2026 Always There Express. All rights reserved.
- </div>
+<div>
+© 2026 Always There Express. All rights reserved.
+</div>
 
- <div>
-   Driver recruiting website • Information subject to position availability.
- </div>
+<div>
+CDL Driver Recruiting • Information subject to current
+position availability and company terms.
+</div>
 
 </div>
 
